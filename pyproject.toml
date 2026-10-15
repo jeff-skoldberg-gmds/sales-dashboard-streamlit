@@ -1,0 +1,14 @@
+[project]
+name = "crooked-crow-sales-demo"
+version = "0"
+description = "Demo sales dashboard for a fictional pickle company, on DuckDB."
+requires-python = ">=3.11"
+dependencies = [
+    "streamlit==1.63.0",
+    "altair==6.0.0",
+    "pandas==2.3.3",
+    "duckdb>=1.2",
+    "pyarrow>=17",
+    "numpy",
+    "pillow",
+]
