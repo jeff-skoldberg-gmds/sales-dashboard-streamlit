@@ -1,0 +1,12 @@
+[theme]
+base = "light"
+baseRadius = "0.5rem"
+primaryColor = "#0e7c86"
+backgroundColor = "#f5f8f6"
+secondaryBackgroundColor = "#e2ece8"
+textColor = "#16262e"
+borderColor = "#bccfc8"
+dataframeHeaderBackgroundColor = "#d3e3dc"
+codeTextColor = "#b3361b"
+codeBackgroundColor = "#e9f0ed"
+linkColor = "#0e7c86"

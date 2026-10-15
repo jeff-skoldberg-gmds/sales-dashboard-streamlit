@@ -1,0 +1,28 @@
+definition_version: 2
+
+env:
+  database: <DATABASE>
+
+entities:
+  my_dashboard:
+    type: streamlit
+    identifier:
+      name: MY_DASHBOARD
+      schema: STREAMLIT
+      database: <% ctx.env.database %>
+    title: My Dashboard
+    comment: One line saying what question this app answers and from which relation.
+    stage: <% ctx.env.database %>.STREAMLIT.STREAMLIT_STAGE
+    query_warehouse: <WAREHOUSE>
+    runtime_name: SYSTEM$ST_CONTAINER_RUNTIME_PY3_11
+    compute_pool: SYSTEM_COMPUTE_POOL_CPU
+    main_file: my_dashboard.py
+    artifacts:
+      - my_dashboard.py
+      - dashboard_lib.py
+      - pages/overview.py
+      - pages/detail.py
+      - pyproject.toml
+      - .streamlit/config.toml
+      - assets/lockup.png
+      - assets/icon.png
